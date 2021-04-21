@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#dcdcdc;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+/* nav styling */
+.nav {
+    background-color: #f77f00;
+}
+.nav-header {
+    /* the div of logo and btn*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1rem;
+    border-bottom: 0.5rem solid black;
+}
+.logo-h {
+    font-size: 30px;
+   font-weight: 800;
+   color: white;
+}
+
+.logo {
+    color: #ff0000;
+}
+
+.nav-toggle {
+/* the button */
+font-size: 1.5rem;
+align-self: center;
+color: #d62828;
+}
+.links {
+    /* ul */
+list-style-type: none;
+background-color: #003049;
+/* after working on single link hover do this */
+height: 0;
+overflow: hidden;
+transition: all 2s linear;
+}
+.show-links {
+    /* i got the height from dev tools using inspect put my cursor on ul the heigth and width will show */
+height: 261px;
+}
+.show-links1 {
+    /* use this to show sub-links */
+    height: 370px;
+}
+.single-link {
+    /* anchor a */
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: all 1s linear;
+    flex: 1 0 auto;
+}
+.single-link:hover {
+    background: #d62828;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+/* sub links */
+.sub-about1 {
+display: none;
+}
+.sub-about2 {
+    display: none;
+    }
+.sub-about3 {
+        display: none;
+ }
+.sub-about4 {
+     display: none;
+ }
+.sub {
+color:#eae2b7;
+margin-left: 5px;
+font-size: 15px;
+}
+.sub-links {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:#d62828;
+    font-weight: 400;
+    transition: all 1s linear;
+}
+.sub-links:hover {
+    font-size: 20px;
+
+}
+/* end of sub links */
+@media screen and (min-width: 768px){
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 0.5rem solid black;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+.nav-header {
+    /* div of logo and button */
+    border: none;
+}
+.nav-toggle {
+    /* button */
+    display: none;
+}
+.links {
+    /* as a child */
+    background: none;
+    height: auto;
+    flex: 1 0 auto;
+    /* as a parent */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+}
+.single-link {
+    color: #ffffff;
+    font-weight: 700;
+}
+.single-link:hover {
+    padding-left: 0;
+    background-color: transparent;
+} 
+.random {
+    display: none;
+}
+}
+/* end of nav */
+.banner {
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pexels-pixabay-260689.jpg')center/cover fixed no-repeat;
+/* as a child */
+flex: 1 0 auto;
+/* as parent */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+.banner1 {
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pexels-pixabay-164547.jpg')center/cover fixed no-repeat;
+/* as a child */
+flex: 1 0 auto;
+/* as parent */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+.banner2 {
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pexels-pixabay-290275.jpg')center/cover fixed no-repeat;
+/* as a child */
+flex: 1 0 auto;
+/* as parent */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+.banner3 {
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pexels-negative-space-34092.jpg')center/cover fixed no-repeat;
+/* as a child */
+flex: 1 0 auto;
+/* as parent */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+
+.slide1 {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.prev-btn {
+    display: none;
+}
+.nxt-btn {
+    display: none;
+    
+}
+/* .btn1 {
+    position: absolute;
+    margin-bottom: 40px;
+    transition: all 2s linear; */
+}
+
+#para {
+    font-size: 15px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    transition: all 1s linear;
+}
+
+  .random {
+   font-size: 1rem;
+   border-radius: 20px;
+   font-weight: 500;
+   background: #d62828;
+   color: #ffffff;
+   transition: all 2s linear;
+   text-transform: capitalize;
+   margin-bottom: 10px;
+  } 
+
+  .random:hover {
+      background: #003049;
+  }
+
+#heading {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 1s linear;
+}
+#heading:hover {
+margin-top: 20px;
+font-weight: 900;
+font-size: 3rem;
+}
+
+#para:hover {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    font-size: 1.5rem;
+}
+/* main section */
+.main-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    /* the div of image */
+    width: 70vw;
+    margin-top: 40px;
+    margin-left: 20px;
+    position: relative;
+    flex: 1 0 auto;  
+}
+.real-image {
+    width: 100%;
+    display: block;
+}
+div.main-image::before {
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: -10px;
+    left: -10px;
+    z-index: -1;
+    background-color: #000000;
+    border: 2px solid black;
+    transition: all 2s linear;
+   }
+div.main-image:hover::before {
+    bottom: 0px;
+    left: 0px;
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #d62828;
+}
+.main-parag {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 676px){
+    .main-image {
+        width: 40vw;
+    }
+    .main-sect {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-text {
+        font-size: 3rem;
+        transition: all 2s linear;
+    }
+    .main-text:hover {
+        font-size: 4rem;
+        text-decoration: underline;
+        color: #03045e;
+    }
+    .main-parag {
+        font-size: 2rem;
+    
+}
+#heading {
+    font-size: 4rem;
+}
+#para {
+    font-size: 25px;
+}
+#heading:hover {
+    font-size: 5rem;
+}
+#para {
+    font-size: 30px;
+}
+
+/* .prev-btn {
+    margin-left: -900px;
+}
+.nxt-btn {
+    margin-right: -900px;
+    
+}
+.btn1 {
+    position: absolute;
+    margin-bottom: 40px;
+    transition: all 2s linear;
+} */
+}
+/* end of main section */
+
+/* footer */
+.footer {
+    background-color: #003049;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 766px){
+    .footer {
+font-size: 1.5rem;
+font-weight: 500;
+}
+}
+/* end of footer */
